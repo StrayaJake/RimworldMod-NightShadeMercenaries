@@ -2,7 +2,7 @@
     <v1.4>
         <li>/</li>
         <li>1.4</li>
-        <li IfModActive="OskarPotocki.VanillaFactionsExpanded.Core">VE</li>
+        <li IfModActive="OskarPotocki.VanillaFactionsExpanded.Core">VE/Patches/1.4</li>
         <li IfModActive="CETeam.CombatExtended">CE</li>
         <li IfModActive="Ludeon.Rimworld.Biotech">Biotech</li>
         <li IfModActive="IssacZhuang.MuzzleFlash">MuzzleFlashes</li>
@@ -10,9 +10,17 @@
     <v1.5>
         <li>/</li>
         <li>1.5</li>
-        <li IfModActive="OskarPotocki.VanillaFactionsExpanded.Core">VE</li>
+        <li IfModActive="OskarPotocki.VanillaFactionsExpanded.Core">VE/Patches/1.5</li>
         <li IfModActive="CETeam.CombatExtended">CE</li>
         <li IfModActive="Ludeon.Rimworld.Biotech">Biotech</li>
         <li IfModActive="IssacZhuang.MuzzleFlash">MuzzleFlashes</li>
     </v1.5>
+    <v1.6>
+        <li>/</li>
+        <li>1.6</li>
+        <li IfModActive="OskarPotocki.VanillaFactionsExpanded.Core">VE/Patches/1.6</li>
+        <li IfModActive="CETeam.CombatExtended">CE</li>
+        <li IfModActive="Ludeon.Rimworld.Biotech">Biotech</li>
+        <li IfModActive="IssacZhuang.MuzzleFlash">MuzzleFlashes</li>
+    </v1.6>
 </loadFolders>

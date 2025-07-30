@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThingDef ParentName="PlantFoodRawBase">
+        <defName>RawDarvonishum</defName>
+        <label>Raw Darvonishum</label>
+        <description>Raw Darvonishum</description>
+        <possessionCount>10</possessionCount>
+        <graphicData>
+            <texPath>Things/Items/Resources/RawDarvonishum/RawDarvonishum</texPath>
+        </graphicData>
+        <statBases>
+            <MarketValue>1.1</MarketValue>
+            <Nutrition>1</Nutrition>
+            <FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
+        </statBases>
+        <ingestible>
+            <foodType>Fungus</foodType>
+        </ingestible>
+        <ingredient>
+            <mergeCompatibilityTags>
+                <li MayRequire="Ludeon.RimWorld.Ideology">Fungus</li>
+            </mergeCompatibilityTags>
+        </ingredient>
+        <comps>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>5</daysToRotStart>
+                <rotDestroys>true</rotDestroys>
+            </li>
+        </comps>
+    </ThingDef>
+</Defs>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <!-- MILK -->
+    <ThingDef ParentName="OrganicProductBase">
+        <defName>Item_Shadum_Milk</defName>
+        <label>Shadum Milk</label>
+        <description>Milk from an animal.</description>
+        <graphicData>
+            <texPath>Things/Items/Resources/Shadum_Milk</texPath>
+        </graphicData>
+        <socialPropernessMatters>true</socialPropernessMatters>
+        <statBases>
+            <MarketValue>2.4</MarketValue> <!-- Can be used like meat in recipes -->
+            <Mass>0.045</Mass>
+            <MaxHitPoints>60</MaxHitPoints>
+            <Flammability>0.2</Flammability>
+            <Nutrition>0.1</Nutrition>
+            <FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>14</daysToRotStart>
+                <rotDestroys>true</rotDestroys>
+            </li>
+        </comps>
+        <ingestible>
+            <preferability>RawTasty</preferability>
+            <foodType>AnimalProduct, Fluid</foodType>
+            <babiesCanIngest>true</babiesCanIngest>
+        </ingestible>
+        <thingCategories>
+            <li>AnimalProductRaw</li>
+        </thingCategories>
+        <allowedArchonexusCount>80</allowedArchonexusCount>
+    </ThingDef>
+    
+    <!-- WOOL -->
+    <ThingDef ParentName="WoolBase">
+        <defName>WoolShadum</defName>
+        <label>Shadum Wool</label>
+        <description>Soft, light and provides very good insulation.</description>
+        <possessionCount>30</possessionCount>
+        <statBases>
+            <StuffPower_Insulation_Cold>28</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>12</StuffPower_Insulation_Heat>
+        </statBases>
+        <graphicData>
+            <color>(55,55,55)</color>
+        </graphicData>
+        <stuffProps>
+            <color>(55,55,55)</color>
+        </stuffProps>
+    </ThingDef>
+
+    <!-- LEATHER -->
+    <ThingDef ParentName="LeatherBase">
+        <defName>Leather_Shadum</defName>
+        <label>Shadum Leather</label>
+        <description>Furry pelt of a Shadum. Luxurious and extraordinarily durable. Used for the highest-quality crafts for its insulation and strength.</description>
+        <graphicData>
+            <color>(55,55,55)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>6.0</MarketValue>
+            <StuffPower_Armor_Sharp>.5</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>0.1</StuffPower_Armor_Blunt>
+            <StuffPower_Insulation_Cold>34</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>22</StuffPower_Insulation_Heat>
+        </statBases>
+        <stuffProps>
+            <color>(55,55,55)</color>
+            <commonality>0.0025</commonality>
+            <statFactors>
+                <MaxHitPoints>2.0</MaxHitPoints>
+                <Beauty>8</Beauty>
+            </statFactors>
+        </stuffProps>
+    </ThingDef>
+
+    <!-- HORN -->
+    <ThingDef ParentName="ResourceBase">
+        <defName>Shadum_Horn</defName>
+        <label>Shadum Horn</label>
+        <description>A Shadums horn. It's razor-sharp, rock-hard, and priceless in most markets.</description>
+        <graphicData>
+            <texPath>Things/Items/Resources/Shadum_Horn</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <equippedAngleOffset>-20</equippedAngleOffset>
+        <statBases>
+            <MarketValue>800</MarketValue>
+            <MaxHitPoints>150</MaxHitPoints>
+            <Mass>3</Mass>
+            <Flammability>0.4</Flammability>
+            <DeteriorationRate>0.5</DeteriorationRate>
+        </statBases>
+        <resourceReadoutPriority>Middle</resourceReadoutPriority>
+        <stackLimit>10</stackLimit>
+        <relicChance>3</relicChance>
+        <comps>
+            <li Class="CompProperties_Styleable"></li>
+        </comps>
+        <thingCategories>
+            <li>ItemsMisc</li>
+        </thingCategories>
+        <tradeTags>
+            <li>ExoticMisc</li>
+        </tradeTags>
+        <thingSetMakerTags>
+            <li>AnimalPart</li>
+        </thingSetMakerTags>
+    </ThingDef>
+</Defs>
