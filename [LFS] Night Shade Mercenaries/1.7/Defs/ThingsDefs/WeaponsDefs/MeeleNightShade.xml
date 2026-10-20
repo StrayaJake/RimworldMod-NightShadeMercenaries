@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!-- ==================== K-F3 (Knife) ================================ -->
+    <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+        <defName>Melee_KF3_NS</defName>
+        <label>K-F3 "Knife"</label>
+        <description>A standard combat knife, has a inbuilt plasma blade</description>
+        <graphicData>
+            <texPath>Things/Weapons/K-F3</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <techLevel>Spacer</techLevel>
+        <weaponTags>
+            <li>NightShadeMeleeStandard</li>
+        </weaponTags>
+        <statBases>
+            <MarketValue>400</MarketValue>
+            <WorkToMake>10000</WorkToMake>
+            <Mass>0.6</Mass>
+        </statBases>
+        <costList>
+            <Steel>10</Steel>
+            <Plasteel>20</Plasteel>
+            <ComponentSpacer>1</ComponentSpacer>
+        </costList>
+        <equippedAngleOffset>-90</equippedAngleOffset>
+        <tools>
+            <li>
+                <label>handle</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>14</power>
+                <cooldownTime>2</cooldownTime>
+                <armorPenetration>0.13</armorPenetration>
+            </li>
+            <li>
+                <label>point</label>
+                <capacities>
+                    <li>Stab</li>
+                </capacities>
+                <power>20</power>
+                <cooldownTime>1.5</cooldownTime>
+                <armorPenetration>0.55</armorPenetration>
+            </li>
+            <li>
+                <label>edge</label>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>20</power>
+                <cooldownTime>2</cooldownTime>
+                <armorPenetration>0.45</armorPenetration>
+            </li>
+        </tools>
+        <recipeMaker>
+            <researchPrerequisite>PlasmaInfusions</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>5</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="False">
+                <li>Building_PlasmaForge</li>
+            </recipeUsers>
+        </recipeMaker>
+    </ThingDef>
+
+    <!-- ==================== K-F9 (Knife) ================================ -->
+    <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+        <defName>Melee_KF9_NS</defName>
+        <label>K-F9 "Knife"</label>
+        <description>A long combat knife, has a inbuilt plasma blade. More like a sword than a knife</description>
+        <graphicData>
+            <texPath>Things/Weapons/K-F9</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <techLevel>Spacer</techLevel>
+        <weaponTags>
+            <li>NightShadeMeleeStandard</li>
+        </weaponTags>
+        <statBases>
+            <MarketValue>600</MarketValue>
+            <WorkToMake>16000</WorkToMake>
+            <Mass>1.2</Mass>
+        </statBases>
+        <costList>
+            <Steel>20</Steel>
+            <Plasteel>30</Plasteel>
+            <ComponentSpacer>1</ComponentSpacer>
+        </costList>
+        <equippedAngleOffset>-90</equippedAngleOffset>
+        <tools>
+            <li>
+                <label>handle</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>14</power>
+                <cooldownTime>2</cooldownTime>
+                <armorPenetration>0.13</armorPenetration>
+            </li>
+            <li>
+                <label>point</label>
+                <capacities>
+                    <li>Stab</li>
+                </capacities>
+                <power>25</power>
+                <cooldownTime>1.5</cooldownTime>
+                <armorPenetration>0.55</armorPenetration>
+            </li>
+            <li>
+                <label>edge</label>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>25</power>
+                <cooldownTime>2</cooldownTime>
+                <armorPenetration>0.45</armorPenetration>
+            </li>
+        </tools>
+        <recipeMaker>
+            <researchPrerequisite>PlasmaInfusions</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>7</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="False">
+                <li>Building_PlasmaForge</li>
+            </recipeUsers>
+        </recipeMaker>
+    </ThingDef>
+
+    <!-- ==================== H-HM12 (Hammer) ================================ -->
+    <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+        <defName>Melee_HHM12_NS</defName>
+        <label>H-HM12 "Hammer"</label>
+        <description>A Short Axe with built in plasma plates</description>
+        <graphicData>
+            <texPath>Things/Weapons/H-HM12</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <techLevel>Spacer</techLevel>
+        <weaponTags>
+            <li>NightShadeMeleeStandard</li>
+        </weaponTags>
+        <statBases>
+            <MarketValue>600</MarketValue>
+            <WorkToMake>16000</WorkToMake>
+            <Mass>1.2</Mass>
+        </statBases>
+        <costList>
+            <Steel>20</Steel>
+            <Plasteel>30</Plasteel>
+            <ComponentSpacer>1</ComponentSpacer>
+        </costList>
+        <equippedAngleOffset>-90</equippedAngleOffset>
+        <tools>
+            <li>
+                <label>handle</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>14</power>
+                <cooldownTime>2</cooldownTime>
+                <armorPenetration>0.13</armorPenetration>
+            </li>
+            <li>
+                <label>edge</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Cut</li>
+                </capacities>
+                <power>35</power>
+                <cooldownTime>2</cooldownTime>
+                <armorPenetration>0.7</armorPenetration>
+            </li>
+        </tools>
+        <recipeMaker>
+            <researchPrerequisite>PlasmaInfusions</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>7</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="False">
+                <li>Building_PlasmaForge</li>
+            </recipeUsers>
+        </recipeMaker>
+    </ThingDef>
+</Defs>

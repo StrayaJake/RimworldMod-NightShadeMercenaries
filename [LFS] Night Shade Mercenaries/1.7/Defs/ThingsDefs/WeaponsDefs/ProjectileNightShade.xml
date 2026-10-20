@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!-- P21 - Assault Rifle -->
+    <ThingDef ParentName="BaseBullet">
+        <defName>NS_Bullet_P21_Standard</defName>
+        <label>Standard 6x45 Plasma Charge</label>
+        <graphicData>
+            <texPath>Things/Projectile/P21</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>18</damageAmountBase>
+            <armorPenetrationBase>0.4</armorPenetrationBase>
+            <stoppingPower>1.5</stoppingPower>
+            <speed>80</speed>
+        </projectile>
+    </ThingDef>
+    
+    <!-- P30 - Light Machine Gun -->
+    <ThingDef ParentName="BaseBullet">
+        <defName>NS_Bullet_P30_Standard</defName>
+        <label>Standard 5.56x45 Plasma Charge</label>
+        <graphicData>
+            <texPath>Things/Projectile/P21</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Flame</damageDef>
+            <damageAmountBase>14</damageAmountBase>
+            <armorPenetrationBase>0.5</armorPenetrationBase>
+            <stoppingPower>2</stoppingPower>
+            <speed>70</speed>
+        </projectile>
+    </ThingDef>
+
+    <!-- P10 - Shotgun -->
+    <ThingDef ParentName="BaseBullet">
+        <defName>NS_Bullet_P10_Standard</defName>
+        <label>Standard 12 Gauge Plasma Charge</label>
+        <graphicData>
+            <texPath>Things/Projectile/P10</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>22</damageAmountBase>
+            <armorPenetrationBase>0.45</armorPenetrationBase>
+            <stoppingPower>3</stoppingPower>
+            <speed>60</speed>
+        </projectile>
+    </ThingDef>
+
+    <!-- P50 - Sniper -->
+    <ThingDef ParentName="BaseBullet">
+        <defName>NS_Bullet_P50_Standard</defName>
+        <label>Standard 50x230 caliber Plasma Charge</label>
+        <graphicData>
+            <texPath>Things/Projectile/P50</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Flame</damageDef>
+            <damageAmountBase>30</damageAmountBase>
+            <armorPenetrationBase>0.6</armorPenetrationBase>
+            <stoppingPower>6</stoppingPower>
+            <speed>100</speed>
+        </projectile>
+    </ThingDef>
+
+    <!-- P3 - Light Arm -->
+    <ThingDef ParentName="BaseBullet">
+        <defName>NS_Bullet_P3_Standard</defName>
+        <label>Standard 9x19 Plasma Charge</label>
+        <graphicData>
+            <texPath>Things/Projectile/P3</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>8</damageAmountBase>
+            <armorPenetrationBase>0.3</armorPenetrationBase>
+            <stoppingPower>1.3</stoppingPower>
+            <speed>60</speed>
+        </projectile>
+    </ThingDef>
+
+    <!-- P1 - Pistol -->
+    <ThingDef ParentName="BaseBullet">
+        <defName>NS_Bullet_P1_Standard</defName>
+        <label>Standard .45 Plasma Charge</label>
+        <graphicData>
+            <texPath>Things/Projectile/P3</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>6</damageAmountBase>
+            <armorPenetrationBase>0.3</armorPenetrationBase>
+            <stoppingPower>1.3</stoppingPower>
+            <speed>60</speed>
+        </projectile>
+    </ThingDef>
+
+    <!-- R512 - Rocket  -->
+    <ThingDef ParentName="BaseBullet">
+        <defName>NS_Bullet_R512_Standard</defName>
+        <label>Standard R512 Grenade</label>
+        <graphicData>
+            <texPath>Things/Projectile/R512</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>TransparentPostLight</shaderType>
+        </graphicData>
+        <thingClass>Projectile_Explosive</thingClass>
+        <projectile>
+            <damageDef>Bomb</damageDef>
+            <explosionRadius>3.0</explosionRadius>
+            <speed>100</speed>
+        </projectile>
+    </ThingDef>
+</Defs>
