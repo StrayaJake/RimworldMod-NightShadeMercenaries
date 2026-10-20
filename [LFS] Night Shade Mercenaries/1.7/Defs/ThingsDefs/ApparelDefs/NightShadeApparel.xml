@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!-- A-NSG -->
+    <ThingDef ParentName="ArmorMachineableBase">
+        <defName>Apparel_ANSG_Standard</defName>
+        <label>A-NSG "Power Armour"</label>
+        <description>A high-tech armored suit with a built-in tempature adjusters and a protective nanite infused metal.\n\nThis armour is used and manufactured by the night shade mercenarys</description>
+        <techLevel>Spacer</techLevel>
+        <recipeMaker>
+            <researchPrerequisite>PlasmaInfushedPowerArmour</researchPrerequisite>
+            <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>8</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="False">
+                <li>Building_PlasmaForge</li>
+            </recipeUsers>
+        </recipeMaker>
+        <thingCategories>
+            <li>ApparelArmor</li>
+        </thingCategories>
+        <graphicData>
+            <texPath>Things/Appeal/A-NSG/A-NSG</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <uiIconScale>1</uiIconScale>
+        <statBases>
+            <MarketValue>3000</MarketValue>
+            <WorkToMake>75000</WorkToMake>
+            <MaxHitPoints>400</MaxHitPoints>
+            <Mass>15</Mass>
+            <Flammability>0.4</Flammability>
+            <ArmorRating_Sharp>1.2</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.62</ArmorRating_Heat>
+            <Insulation_Cold>46</Insulation_Cold>
+            <Insulation_Heat>14</Insulation_Heat>
+            <EquipDelay>17</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <PainShockThreshold>0.1</PainShockThreshold>
+            <MoveSpeed>-0.1</MoveSpeed>
+            <MentalBreakThreshold>0.05</MentalBreakThreshold>
+            <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.2</SlaveSuppressionOffset>
+            <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.35</ToxicEnvironmentResistance>
+        </equippedStatOffsets>
+        <costList>
+            <ComponentSpacer>5</ComponentSpacer>
+            <Plasteel>120</Plasteel>
+            <Uranium>30</Uranium>
+            <WoolShadum>180</WoolShadum>
+            <Shadum_Horn>3</Shadum_Horn>
+        </costList>
+        <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Neck</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Appeal/A-NSG/A-NSG</wornGraphicPath>
+            <layers>
+                <li>Middle</li>
+                <li>Shell</li>
+            </layers>
+            <tags>
+                <li>SpacerMilitary</li>
+            </tags>
+            <useDeflectMetalEffect>true</useDeflectMetalEffect>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_Options">
+            <options>
+                <li>
+                    <weight>10</weight>
+                    <only>(1,1,1,1)</only>
+                </li>
+            </options>
+        </colorGenerator>
+        <tradeTags>
+            <li>HiTechArmor</li>
+            <li>Armor</li>
+        </tradeTags>
+    </ThingDef>
+
+    <!-- H-NSG -->
+    <ThingDef ParentName="ArmorHelmetMakeableBase">
+        <defName>Apparel_HNSG_Standard</defName>
+        <label>H-NSG "Power Helmet"</label>
+        <description>A high-tech armored helmet with a built-in aim adjuster and a protective nanite infused metal.\n\nThis armour is used and manufactured by the night shade mercenarys</description>
+        <techLevel>Spacer</techLevel>
+        <recipeMaker>
+            <researchPrerequisite>PlasmaInfushedPowerArmour</researchPrerequisite>
+            <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>8</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="False">
+                <li>Building_PlasmaForge</li>
+            </recipeUsers>
+        </recipeMaker>
+        <thingCategories>
+            <li>ApparelArmor</li>
+        </thingCategories>
+        <graphicData>
+            <texPath>Things/Appeal/H-NSG/H-NSG</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <uiIconScale>1</uiIconScale>
+        <statBases>
+            <MarketValue>3000</MarketValue>
+            <WorkToMake>26250</WorkToMake>
+            <MaxHitPoints>180</MaxHitPoints>
+            <Mass>2.1</Mass>
+            <Flammability>0.4</Flammability>
+            <ArmorRating_Sharp>1.2</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.62</ArmorRating_Heat>
+            <Insulation_Cold>14</Insulation_Cold>
+            <Insulation_Heat>3</Insulation_Heat>
+            <EquipDelay>6</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <PainShockThreshold>0.05</PainShockThreshold>
+            <MoveSpeed>-0.02</MoveSpeed>
+            <MentalBreakThreshold>0.1</MentalBreakThreshold>
+            <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.4</SlaveSuppressionOffset>
+            <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.5</ToxicEnvironmentResistance>
+        </equippedStatOffsets>
+        <costList>
+            <ComponentSpacer>2</ComponentSpacer>
+            <Plasteel>60</Plasteel>
+            <WoolShadum>60</WoolShadum>
+            <Shadum_Horn>1</Shadum_Horn>
+        </costList>
+        <apparel>
+            <bodyPartGroups>
+                <li>FullHead</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Appeal/H-NSG/H-NSG</wornGraphicPath>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <tags>
+                <li>SpacerMilitary</li>
+            </tags>
+            <useDeflectMetalEffect>true</useDeflectMetalEffect>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_Options">
+            <options>
+                <li>
+                    <weight>10</weight>
+                    <only>(1,1,1,1)</only>
+                </li>
+            </options>
+        </colorGenerator>
+        <tradeTags>
+            <li>Armor</li>
+        </tradeTags>
+    </ThingDef>
+
+    <!-- H-LNG -->
+    <ThingDef ParentName="ArmorHelmetMakeableBase">
+        <defName>Apparel_HLNG_Standard</defName>
+        <label>H-LNG</label>
+        <description>A</description>
+        <techLevel>Industrial</techLevel>
+        <recipeMaker>
+            <researchPrerequisite>FlakArmor</researchPrerequisite>
+            <unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>5</Crafting>
+            </skillRequirements>
+            <displayPriority>205</displayPriority>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/Appeal/H-LNG/H-LNG</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <uiIconScale>2</uiIconScale>
+        <statBases>
+            <WorkToMake>1200</WorkToMake>
+            <MaxHitPoints>160</MaxHitPoints>
+            <Mass>1.5</Mass>
+            <Flammability>0.2</Flammability>
+            <ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.40</ArmorRating_Heat>
+            <Insulation_Cold>10</Insulation_Cold>
+            <Insulation_Heat>3</Insulation_Heat>
+            <EquipDelay>2</EquipDelay>
+        </statBases>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <costStuffCount>120</costStuffCount>
+        <costList>
+            <ComponentIndustrial>3</ComponentIndustrial>
+            <Plasteel>30</Plasteel>
+        </costList>
+        <apparel>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <bodyPartGroups>
+                <li>UpperHead</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Appeal/H-LNG/H-LNG</wornGraphicPath>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <tags>
+                <li>IndustrialMilitaryAdvanced</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_Options">
+            <options>
+                <li>
+                    <weight>10</weight>
+                    <only>(1,1,1,1)</only>
+                </li>
+            </options>
+        </colorGenerator>
+        <tradeTags>
+            <li>Armor</li>
+        </tradeTags>
+    </ThingDef>
+</Defs>

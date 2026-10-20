@@ -23,4 +23,12 @@
         <li IfModActive="Ludeon.Rimworld.Biotech">Biotech</li>
         <li IfModActive="IssacZhuang.MuzzleFlash">MuzzleFlashes</li>
     </v1.6>
+    <v1.7>
+        <li>/</li>
+        <li>1.7</li>
+        <li IfModActive="OskarPotocki.VanillaFactionsExpanded.Core">VE/Patches/1.7</li>
+        <li IfModActive="CETeam.CombatExtended">CE</li>
+        <li IfModActive="Ludeon.Rimworld.Biotech">Biotech</li>
+        <li IfModActive="IssacZhuang.MuzzleFlash">MuzzleFlashes</li>
+    </v1.7>
 </loadFolders>
